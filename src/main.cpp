@@ -138,7 +138,11 @@ int Frodo::ReadyToRun()
 {
 	// Load preferences
 	if (prefs_path.empty()) {
+#if defined(PREFPATH)
+		auto path = fs::path(PREFPATH);
+#else
 		auto path = SDL_GetPrefPath("cebix", "Frodo");
+#endif
 		prefs_path = fs::path(path) / "config";
 		snapshot_path = fs::path(path) / "snapshots";
 
@@ -146,8 +150,9 @@ int Frodo::ReadyToRun()
 		if (! fs::exists(snapshot_path)) {
 			fs::create_directories(snapshot_path);
 		}
-
+#if !defined(PREFPATH)
 		SDL_free(path);
+#endif
 	}
 	ThePrefs.Load(prefs_path);
 
