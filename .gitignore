@@ -49,3 +49,8 @@ Makefile.in
 stamp-h1
 src/sysconfig.h
 src/sysconfig.h.in
+
+# cmake
+/build/
+
+!/dev/configure/
