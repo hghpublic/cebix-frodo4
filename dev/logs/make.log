@@ -1,0 +1,304 @@
+Making all in src
+make[1]: Entering directory '/workspaces/cebix-frodo4/src'
+(CDPATH="${ZSH_VERSION+.}:" && cd .. && /bin/bash '/workspaces/cebix-frodo4/missing' autoheader)
+rm -f stamp-h1
+touch sysconfig.h.in
+cd .. && /bin/bash ./config.status src/sysconfig.h
+config.status: creating src/sysconfig.h
+config.status: src/sysconfig.h is unchanged
+make  all-am
+make[2]: Entering directory '/workspaces/cebix-frodo4/src'
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-main.o -MD -MP -MF .deps/Frodo-main.Tpo -c -o Frodo-main.o `test -f 'main.cpp' || echo './'`main.cpp
+mv -f .deps/Frodo-main.Tpo .deps/Frodo-main.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-Display.o -MD -MP -MF .deps/Frodo-Display.Tpo -c -o Frodo-Display.o `test -f 'Display.cpp' || echo './'`Display.cpp
+mv -f .deps/Frodo-Display.Tpo .deps/Frodo-Display.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-Prefs.o -MD -MP -MF .deps/Frodo-Prefs.Tpo -c -o Frodo-Prefs.o `test -f 'Prefs.cpp' || echo './'`Prefs.cpp
+mv -f .deps/Frodo-Prefs.Tpo .deps/Frodo-Prefs.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-SID.o -MD -MP -MF .deps/Frodo-SID.Tpo -c -o Frodo-SID.o `test -f 'SID.cpp' || echo './'`SID.cpp
+In file included from SID.cpp:1224:
+SID_catweasel.h: In member function ‘virtual void CatweaselRenderer::Reset()’:
+SID_catweasel.h:94:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |                 write(cwsid_fh, &zero, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+SID_catweasel.h: In member function ‘virtual void CatweaselRenderer::WriteRegister(uint16_t, uint8_t)’:
+SID_catweasel.h:103:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |                 write(cwsid_fh, &byte, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+SID_catweasel.h:105:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |                 write(cwsid_fh, &byte, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+mv -f .deps/Frodo-SID.Tpo .deps/Frodo-SID.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-REU.o -MD -MP -MF .deps/Frodo-REU.Tpo -c -o Frodo-REU.o `test -f 'REU.cpp' || echo './'`REU.cpp
+mv -f .deps/Frodo-REU.Tpo .deps/Frodo-REU.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-IEC.o -MD -MP -MF .deps/Frodo-IEC.Tpo -c -o Frodo-IEC.o `test -f 'IEC.cpp' || echo './'`IEC.cpp
+mv -f .deps/Frodo-IEC.Tpo .deps/Frodo-IEC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-1541fs.o -MD -MP -MF .deps/Frodo-1541fs.Tpo -c -o Frodo-1541fs.o `test -f '1541fs.cpp' || echo './'`1541fs.cpp
+mv -f .deps/Frodo-1541fs.Tpo .deps/Frodo-1541fs.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-1541d64.o -MD -MP -MF .deps/Frodo-1541d64.Tpo -c -o Frodo-1541d64.o `test -f '1541d64.cpp' || echo './'`1541d64.cpp
+1541d64.cpp: In function ‘bool parse_image_file(FILE*, image_file_desc&)’:
+1541d64.cpp:1937:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1937 |         fread(header, 1, sizeof(header), f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp: In function ‘bool parse_x64_file(FILE*, image_file_desc&)’:
+1541d64.cpp:1923:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1923 |         fread(desc.error_info, 1, 256, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp: In function ‘bool parse_d64_file(FILE*, image_file_desc&)’:
+1541d64.cpp:1889:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1889 |         fread(desc.error_info, 1, 256, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp:1897:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1897 |                 fread(desc.error_info, NUM_SECTORS_35, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp:1901:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1901 |                 fread(desc.error_info, NUM_SECTORS_40, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/Frodo-1541d64.Tpo .deps/Frodo-1541d64.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-1541t64.o -MD -MP -MF .deps/Frodo-1541t64.Tpo -c -o Frodo-1541t64.o `test -f '1541t64.cpp' || echo './'`1541t64.cpp
+1541t64.cpp: In member function ‘bool ArchDrive::change_arch(const std::string&)’:
+1541t64.cpp:105:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |                 fread(header, 1, 64, new_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool parse_t64_file(FILE*, std::vector<c64_dir_entry>&, char*)’:
+1541t64.cpp:597:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  597 |         fread(&buf, 32, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~
+1541t64.cpp:608:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  608 |         fread(buf2, 32, max, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool parse_lynx_file(FILE*, std::vector<c64_dir_entry>&, char*)’:
+1541t64.cpp:658:15: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  658 |         fscanf(f, "%d", &dir_blocks);
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:664:15: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  664 |         fscanf(f, "%d\x0d", &num_files);
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:673:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  673 |                 fread(name_buf, 16, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:682:23: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  682 |                 fscanf(f, "\x0d%d\x0d%c\x0d%d\x0d", &num_blocks, &type_char, &last_block);
+      |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:705:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  705 |                 fread(&sa_lo, 1, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp:706:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  706 |                 fread(&sa_hi, 1, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool parse_p00_file(FILE*, std::vector<c64_dir_entry>&, char*)’:
+1541t64.cpp:729:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  729 |         fread(name_buf, 17, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:733:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  733 |         fread(&sa_lo, 1, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp:734:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  734 |         fread(&sa_hi, 1, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp: In member function ‘uint8_t ArchDrive::open_file(int, const uint8_t*, int)’:
+1541t64.cpp:237:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  237 |                         fread(buf, file_info[num].size, 1, the_file);
+      |                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool ReadArchDirectory(const std::string&, std::vector<c64_dir_entry>&)’:
+1541t64.cpp:753:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  753 |                 fread(header, 1, sizeof(header), f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/Frodo-1541t64.Tpo .deps/Frodo-1541t64.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-1541gcr.o -MD -MP -MF .deps/Frodo-1541gcr.Tpo -c -o Frodo-1541gcr.o `test -f '1541gcr.cpp' || echo './'`1541gcr.cpp
+1541gcr.cpp: In member function ‘bool GCRDisk::load_image_file()’:
+1541gcr.cpp:289:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  289 |                 fread(header, sizeof(header), 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:312:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  312 |                 fread(&error_info, num_sectors, 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp: In member function ‘bool GCRDisk::load_gcr_file()’:
+1541gcr.cpp:348:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  348 |         fread(header, sizeof(header), 1, the_file);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:360:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  360 |         fread(track_offsets, num_halftracks * 4, 1, the_file);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:374:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  374 |                 fread(len, sizeof(len), 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:380:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  380 |                 fread(gcr_data[halftrack], length, 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/Frodo-1541gcr.Tpo .deps/Frodo-1541gcr.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-Tape.o -MD -MP -MF .deps/Frodo-Tape.Tpo -c -o Frodo-Tape.o `test -f 'Tape.cpp' || echo './'`Tape.cpp
+mv -f .deps/Frodo-Tape.Tpo .deps/Frodo-Tape.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-Cartridge.o -MD -MP -MF .deps/Frodo-Cartridge.Tpo -c -o Frodo-Cartridge.o `test -f 'Cartridge.cpp' || echo './'`Cartridge.cpp
+mv -f .deps/Frodo-Cartridge.Tpo .deps/Frodo-Cartridge.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-SAM.o -MD -MP -MF .deps/Frodo-SAM.Tpo -c -o Frodo-SAM.o `test -f 'SAM.cpp' || echo './'`SAM.cpp
+mv -f .deps/Frodo-SAM.Tpo .deps/Frodo-SAM.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-C64_SC.o -MD -MP -MF .deps/Frodo-C64_SC.Tpo -c -o Frodo-C64_SC.o `test -f 'C64_SC.cpp' || echo './'`C64_SC.cpp
+In file included from C64_SC.cpp:24:
+C64.cpp: In function ‘bool IsSnapshotFile(const char*)’:
+C64.cpp:1592:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1592 |         fread(magic, sizeof(magic), 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/Frodo-C64_SC.Tpo .deps/Frodo-C64_SC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-CPUC64_SC.o -MD -MP -MF .deps/Frodo-CPUC64_SC.Tpo -c -o Frodo-CPUC64_SC.o `test -f 'CPUC64_SC.cpp' || echo './'`CPUC64_SC.cpp
+mv -f .deps/Frodo-CPUC64_SC.Tpo .deps/Frodo-CPUC64_SC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-VIC_SC.o -MD -MP -MF .deps/Frodo-VIC_SC.Tpo -c -o Frodo-VIC_SC.o `test -f 'VIC_SC.cpp' || echo './'`VIC_SC.cpp
+mv -f .deps/Frodo-VIC_SC.Tpo .deps/Frodo-VIC_SC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-CIA_SC.o -MD -MP -MF .deps/Frodo-CIA_SC.Tpo -c -o Frodo-CIA_SC.o `test -f 'CIA_SC.cpp' || echo './'`CIA_SC.cpp
+mv -f .deps/Frodo-CIA_SC.Tpo .deps/Frodo-CIA_SC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-CPU1541_SC.o -MD -MP -MF .deps/Frodo-CPU1541_SC.Tpo -c -o Frodo-CPU1541_SC.o `test -f 'CPU1541_SC.cpp' || echo './'`CPU1541_SC.cpp
+mv -f .deps/Frodo-CPU1541_SC.Tpo .deps/Frodo-CPU1541_SC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-VIA_SC.o -MD -MP -MF .deps/Frodo-VIA_SC.Tpo -c -o Frodo-VIA_SC.o `test -f 'VIA_SC.cpp' || echo './'`VIA_SC.cpp
+mv -f .deps/Frodo-VIA_SC.Tpo .deps/Frodo-VIA_SC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DFRODO_SC -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT Frodo-CPU_common.o -MD -MP -MF .deps/Frodo-CPU_common.Tpo -c -o Frodo-CPU_common.o `test -f 'CPU_common.cpp' || echo './'`CPU_common.cpp
+mv -f .deps/Frodo-CPU_common.Tpo .deps/Frodo-CPU_common.Po
+g++ -std=c++20  -g -O2  -rdynamic -o Frodo Frodo-main.o Frodo-Display.o Frodo-Prefs.o Frodo-SID.o Frodo-REU.o Frodo-IEC.o Frodo-1541fs.o Frodo-1541d64.o Frodo-1541t64.o Frodo-1541gcr.o Frodo-Tape.o Frodo-Cartridge.o Frodo-SAM.o Frodo-C64_SC.o Frodo-CPUC64_SC.o Frodo-VIC_SC.o Frodo-CIA_SC.o Frodo-CPU1541_SC.o Frodo-VIA_SC.o Frodo-CPU_common.o  -lSDL2  -lgtk-3 -lgdk-3 -lz -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-main.o -MD -MP -MF .deps/FrodoLite-main.Tpo -c -o FrodoLite-main.o `test -f 'main.cpp' || echo './'`main.cpp
+mv -f .deps/FrodoLite-main.Tpo .deps/FrodoLite-main.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-Display.o -MD -MP -MF .deps/FrodoLite-Display.Tpo -c -o FrodoLite-Display.o `test -f 'Display.cpp' || echo './'`Display.cpp
+mv -f .deps/FrodoLite-Display.Tpo .deps/FrodoLite-Display.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-Prefs.o -MD -MP -MF .deps/FrodoLite-Prefs.Tpo -c -o FrodoLite-Prefs.o `test -f 'Prefs.cpp' || echo './'`Prefs.cpp
+mv -f .deps/FrodoLite-Prefs.Tpo .deps/FrodoLite-Prefs.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-SID.o -MD -MP -MF .deps/FrodoLite-SID.Tpo -c -o FrodoLite-SID.o `test -f 'SID.cpp' || echo './'`SID.cpp
+In file included from SID.cpp:1224:
+SID_catweasel.h: In member function ‘virtual void CatweaselRenderer::Reset()’:
+SID_catweasel.h:94:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |                 write(cwsid_fh, &zero, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+SID_catweasel.h: In member function ‘virtual void CatweaselRenderer::WriteRegister(uint16_t, uint8_t)’:
+SID_catweasel.h:103:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |                 write(cwsid_fh, &byte, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+SID_catweasel.h:105:22: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |                 write(cwsid_fh, &byte, 1);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+mv -f .deps/FrodoLite-SID.Tpo .deps/FrodoLite-SID.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-REU.o -MD -MP -MF .deps/FrodoLite-REU.Tpo -c -o FrodoLite-REU.o `test -f 'REU.cpp' || echo './'`REU.cpp
+mv -f .deps/FrodoLite-REU.Tpo .deps/FrodoLite-REU.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-IEC.o -MD -MP -MF .deps/FrodoLite-IEC.Tpo -c -o FrodoLite-IEC.o `test -f 'IEC.cpp' || echo './'`IEC.cpp
+mv -f .deps/FrodoLite-IEC.Tpo .deps/FrodoLite-IEC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-1541fs.o -MD -MP -MF .deps/FrodoLite-1541fs.Tpo -c -o FrodoLite-1541fs.o `test -f '1541fs.cpp' || echo './'`1541fs.cpp
+mv -f .deps/FrodoLite-1541fs.Tpo .deps/FrodoLite-1541fs.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-1541d64.o -MD -MP -MF .deps/FrodoLite-1541d64.Tpo -c -o FrodoLite-1541d64.o `test -f '1541d64.cpp' || echo './'`1541d64.cpp
+1541d64.cpp: In function ‘bool parse_image_file(FILE*, image_file_desc&)’:
+1541d64.cpp:1937:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1937 |         fread(header, 1, sizeof(header), f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp: In function ‘bool parse_x64_file(FILE*, image_file_desc&)’:
+1541d64.cpp:1923:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1923 |         fread(desc.error_info, 1, 256, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp: In function ‘bool parse_d64_file(FILE*, image_file_desc&)’:
+1541d64.cpp:1889:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1889 |         fread(desc.error_info, 1, 256, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp:1897:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1897 |                 fread(desc.error_info, NUM_SECTORS_35, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541d64.cpp:1901:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1901 |                 fread(desc.error_info, NUM_SECTORS_40, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/FrodoLite-1541d64.Tpo .deps/FrodoLite-1541d64.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-1541t64.o -MD -MP -MF .deps/FrodoLite-1541t64.Tpo -c -o FrodoLite-1541t64.o `test -f '1541t64.cpp' || echo './'`1541t64.cpp
+1541t64.cpp: In member function ‘bool ArchDrive::change_arch(const std::string&)’:
+1541t64.cpp:105:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |                 fread(header, 1, 64, new_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool parse_t64_file(FILE*, std::vector<c64_dir_entry>&, char*)’:
+1541t64.cpp:597:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  597 |         fread(&buf, 32, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~
+1541t64.cpp:608:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  608 |         fread(buf2, 32, max, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool parse_lynx_file(FILE*, std::vector<c64_dir_entry>&, char*)’:
+1541t64.cpp:658:15: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  658 |         fscanf(f, "%d", &dir_blocks);
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:664:15: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  664 |         fscanf(f, "%d\x0d", &num_files);
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:673:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  673 |                 fread(name_buf, 16, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:682:23: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  682 |                 fscanf(f, "\x0d%d\x0d%c\x0d%d\x0d", &num_blocks, &type_char, &last_block);
+      |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:705:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  705 |                 fread(&sa_lo, 1, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp:706:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  706 |                 fread(&sa_hi, 1, 1, f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool parse_p00_file(FILE*, std::vector<c64_dir_entry>&, char*)’:
+1541t64.cpp:729:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  729 |         fread(name_buf, 17, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~
+1541t64.cpp:733:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  733 |         fread(&sa_lo, 1, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp:734:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  734 |         fread(&sa_hi, 1, 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~
+1541t64.cpp: In member function ‘uint8_t ArchDrive::open_file(int, const uint8_t*, int)’:
+1541t64.cpp:237:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  237 |                         fread(buf, file_info[num].size, 1, the_file);
+      |                         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541t64.cpp: In function ‘bool ReadArchDirectory(const std::string&, std::vector<c64_dir_entry>&)’:
+1541t64.cpp:753:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  753 |                 fread(header, 1, sizeof(header), f);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/FrodoLite-1541t64.Tpo .deps/FrodoLite-1541t64.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-1541gcr.o -MD -MP -MF .deps/FrodoLite-1541gcr.Tpo -c -o FrodoLite-1541gcr.o `test -f '1541gcr.cpp' || echo './'`1541gcr.cpp
+1541gcr.cpp: In member function ‘bool GCRDisk::load_image_file()’:
+1541gcr.cpp:289:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  289 |                 fread(header, sizeof(header), 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:312:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  312 |                 fread(&error_info, num_sectors, 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp: In member function ‘bool GCRDisk::load_gcr_file()’:
+1541gcr.cpp:348:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  348 |         fread(header, sizeof(header), 1, the_file);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:360:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  360 |         fread(track_offsets, num_halftracks * 4, 1, the_file);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:374:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  374 |                 fread(len, sizeof(len), 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1541gcr.cpp:380:22: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  380 |                 fread(gcr_data[halftrack], length, 1, the_file);
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/FrodoLite-1541gcr.Tpo .deps/FrodoLite-1541gcr.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-Tape.o -MD -MP -MF .deps/FrodoLite-Tape.Tpo -c -o FrodoLite-Tape.o `test -f 'Tape.cpp' || echo './'`Tape.cpp
+mv -f .deps/FrodoLite-Tape.Tpo .deps/FrodoLite-Tape.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-Cartridge.o -MD -MP -MF .deps/FrodoLite-Cartridge.Tpo -c -o FrodoLite-Cartridge.o `test -f 'Cartridge.cpp' || echo './'`Cartridge.cpp
+mv -f .deps/FrodoLite-Cartridge.Tpo .deps/FrodoLite-Cartridge.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-SAM.o -MD -MP -MF .deps/FrodoLite-SAM.Tpo -c -o FrodoLite-SAM.o `test -f 'SAM.cpp' || echo './'`SAM.cpp
+mv -f .deps/FrodoLite-SAM.Tpo .deps/FrodoLite-SAM.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-C64.o -MD -MP -MF .deps/FrodoLite-C64.Tpo -c -o FrodoLite-C64.o `test -f 'C64.cpp' || echo './'`C64.cpp
+C64.cpp: In function ‘bool IsSnapshotFile(const char*)’:
+C64.cpp:1592:14: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1592 |         fread(magic, sizeof(magic), 1, f);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/FrodoLite-C64.Tpo .deps/FrodoLite-C64.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-CPUC64.o -MD -MP -MF .deps/FrodoLite-CPUC64.Tpo -c -o FrodoLite-CPUC64.o `test -f 'CPUC64.cpp' || echo './'`CPUC64.cpp
+mv -f .deps/FrodoLite-CPUC64.Tpo .deps/FrodoLite-CPUC64.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-VIC.o -MD -MP -MF .deps/FrodoLite-VIC.Tpo -c -o FrodoLite-VIC.o `test -f 'VIC.cpp' || echo './'`VIC.cpp
+mv -f .deps/FrodoLite-VIC.Tpo .deps/FrodoLite-VIC.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-CIA.o -MD -MP -MF .deps/FrodoLite-CIA.Tpo -c -o FrodoLite-CIA.o `test -f 'CIA.cpp' || echo './'`CIA.cpp
+mv -f .deps/FrodoLite-CIA.Tpo .deps/FrodoLite-CIA.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-CPU1541.o -MD -MP -MF .deps/FrodoLite-CPU1541.Tpo -c -o FrodoLite-CPU1541.o `test -f 'CPU1541.cpp' || echo './'`CPU1541.cpp
+mv -f .deps/FrodoLite-CPU1541.Tpo .deps/FrodoLite-CPU1541.Po
+g++ -std=c++20 -DHAVE_CONFIG_H -I.  -DPRECISE_CPU_CYCLES=1 -DPRECISE_CIA_CYCLES=1 -DDATADIR=\"/usr/local/share/Frodo/\" -DHTMLDIR=\"/usr/local/share/doc/Frodo/\" -I/usr/include/SDL2 -D_REENTRANT  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/aarch64-linux-gnu -I/usr/include/webp -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/aarch64-linux-gnu/dbus-1.0/include -pthread   -g -O2 -MT FrodoLite-VIA.o -MD -MP -MF .deps/FrodoLite-VIA.Tpo -c -o FrodoLite-VIA.o `test -f 'VIA.cpp' || echo './'`VIA.cpp
+mv -f .deps/FrodoLite-VIA.Tpo .deps/FrodoLite-VIA.Po
+g++ -std=c++20  -g -O2  -rdynamic -o FrodoLite FrodoLite-main.o FrodoLite-Display.o FrodoLite-Prefs.o FrodoLite-SID.o FrodoLite-REU.o FrodoLite-IEC.o FrodoLite-1541fs.o FrodoLite-1541d64.o FrodoLite-1541t64.o FrodoLite-1541gcr.o FrodoLite-Tape.o FrodoLite-Cartridge.o FrodoLite-SAM.o FrodoLite-C64.o FrodoLite-CPUC64.o FrodoLite-VIC.o FrodoLite-CIA.o FrodoLite-CPU1541.o FrodoLite-VIA.o  -lSDL2  -lgtk-3 -lgdk-3 -lz -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 
+make[2]: Leaving directory '/workspaces/cebix-frodo4/src'
+make[1]: Leaving directory '/workspaces/cebix-frodo4/src'
+Making all in docs
+make[1]: Entering directory '/workspaces/cebix-frodo4/docs'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/workspaces/cebix-frodo4/docs'
+make[1]: Entering directory '/workspaces/cebix-frodo4'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/workspaces/cebix-frodo4'
