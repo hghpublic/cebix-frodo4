@@ -1,0 +1,57 @@
+= Frodo
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+
+== Frodo
+
+https://frodo.cebix.net/
+
+https://github.com/cebix/frodo4
+
+https://github.com/hghpublic/cebix-frodo4
+
+== build
+
+----
+$ ./autogen.sh
+$ make
+$ sudo make install
+----
+
+----
+./autogen.sh > ./dev/logs/autogen.sh.log 2>&1
+make > ./dev/logs/make.log 2>&1
+----
+
+== run
+
+----
+./src/Frodo
+WARNING: Cannot open configuration file '/home/vscode/.local/share/cebix/Frodo/config'
+----
+
+== Christian Bauer
+
+https://www.cebix.net/
+
+== Stash
+
+=== Convert HTML docs to AsciiDoc
+
+[source, shell]
+----
+pandoc -s commandline.html -t asciidoc -o commandline.adoc
+----
